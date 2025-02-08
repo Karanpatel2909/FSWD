@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="bg-gray-800 text-white w-64 p-4">
+            <h1 class="text-2xl font-bold mb-6">Medical Shop Dashboard</h1>
+            <ul>
+                <li class="mb-4"><a href="#" class="hover:text-gray-400">Products</a></li>
+                <li class="mb-4"><a href="#" class="hover:text-gray-400">Orders</a></li>
+                <li class="mb-4"><a href="#" class="hover:text-gray-400">Customers</a></li>
+                <li class="mb-4"><a href="#" class="hover:text-gray-400">Inventory</a></li>
+                <li class="mb-4"><a href="#" class="hover:text-gray-400">Reports</a></li>
+                <li class="mb-4"><a href="#" class="hover:text-gray-400">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-6">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-semibold">Welcome to the Medical Shop Dashboard</h2>
+                <div>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">Add New</button>
+                </div>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="mb-6 p-4 bg-light-blue-50 rounded shadow">
+                <h3 class="text-xl font-semibold">Summary</h3>
+                <p class="mt-2">Total Products: X</p>
+                <p class="mt-2">Total Sales: $Y</p>
+                <p class="mt-2">Inventory Status: Z</p>
+                <p class="mt-2">Recent Orders: A</p>
+                <p class="mt-2">Customer Feedback: B</p>
+                <p class="mt-2">Current Promotions: C</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <h3 class="text-xl font-semibold mb-4">Available Products</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded shadow hover:shadow-lg transform hover:scale-105 transition-transform duration-200">
+                        <img src="path/to/image1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-2">
+                        <h4 class="text-lg font-semibold">Product 1</h4>
+                        <p class="mt-1">Description of Product 1.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow hover:shadow-lg transform hover:scale-105 transition-transform duration-200">
+                        <img src="path/to/image2.jpg" alt="Product 2" class="w-full h-32 object-cover mb-2">
+                        <h4 class="text-lg font-semibold">Product 2</h4>
+                        <p class="mt-1">Description of Product 2.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow hover:shadow-lg transform hover:scale-105 transition-transform duration-200">
+                        <img src="path/to/image3.jpg" alt="Product 3" class="w-full h-32 object-cover mb-2">
+                        <h4 class="text-lg font-semibold">Product 3</h4>
+                        <p class="mt-1">Description of Product 3.</p>
+                    </div>
+                    <!-- Add more products as needed -->
+                </div>
+
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold">Total Products</h3>
+                    <p class="mt-2">Total Products: X</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold">Total Sales</h3>
+                    <p class="mt-2">Total Sales: $Y</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold">Inventory Status</h3>
+                    <p class="mt-2">Inventory Status: Z</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold">Recent Orders</h3>
+                    <p class="mt-2">Recent Orders: A</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold">Customer Feedback</h3>
+                    <p class="mt-2">Customer Feedback: B</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold">Current Promotions</h3>
+                    <p class="mt-2">Current Promotions: C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2023 Medical Shop. All rights reserved.</p>
+        <p><a href="#" class="hover:text-gray-400">Privacy Policy</a> | <a href="#" class="hover:text-gray-400">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

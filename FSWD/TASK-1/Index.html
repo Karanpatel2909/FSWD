@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .purple-theme {
+            background-color: #7A288A;
+            color: #fff;
+        }
+        .purple-theme:hover {
+            background-color: #6c2eb9;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 5px;
+        }
+        .progress-bar-fill {
+            width: 0;
+            height: 10px;
+            background-color: #7A288A;
+            border-radius: 5px;
+        }
+        
+        /* New hover effects */
+        .profile-image-hover {
+            transition: transform 0.3s ease;
+        }
+        .profile-image-hover:hover {
+            transform: scale(1.1);
+        }
+        
+        .social-link {
+            transition: color 0.3s ease;
+        }
+        .social-link:hover {
+            color: #6c2eb9;
+            text-decoration: none;
+        }
+        
+        .skill-bar {
+            transition: transform 0.3s ease;
+        }
+        .skill-bar:hover {
+            transform: scaleX(1.02);
+        }
+        
+        .about-section-hover {
+            transition: all 0.3s ease;
+        }
+        .about-section-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-purple-600 text-white p-4">
+        <h1 class="text-3xl text-center">Karan Patel</h1>
+        <nav>
+            <ul class="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4">
+                <li><a href="#about" class="hover:underline">About Me</a></li>
+                <li><a href="#projects" class="hover:underline">Projects</a></li>
+                <li><a href="#skills" class="hover:underline">Skills</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="p-4">
+        <section id="about" class="my-8 text-center bg-gray-200 p-4 rounded-lg shadow about-section-hover">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <p class="mt-2">Hi! I'm a software developer who loves solving problems and building cool apps. I work with HTML, CSS, JavaScript, and Tailwind CSS, and I'm always looking for new challenges to improve my skills. I'm passionate about creating clean, efficient code and making things that work well for users. Let’s connect and make something awesome!</p>
+            <img src="https://imgs.search.brave.com/8DRuPnTScbdjxbnuh6taKeq3fMawWY34kzfZVdo1Pdg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRpYS5nZXR0eWltYWdlcy5jb20vaWQvMTAyMTEzNzA2Mi9waG90by9zb2Z0d2FyZS1kZXZlbG9wZXJzLWRvbmUtc29tZS1yZXNlYXJjaC5qcGc_c3M9NjEyJng9NjEyJmd0PTAmaz0yMCZjPUszWWRTUlBHR0NVU3dTV2tlXl9udWhXc3pSeHBqVG5pNXNSQllKa0ZNcFE9" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mt-4 profile-image-hover">
+            <p class="mt-2">Connect with me on <a href="https://twitter.com/yourprofile" class="text-purple-600 social-link">Twitter</a> and <a href="https://linkedin.com/in/yourprofile" class="text-purple-600 social-link">LinkedIn</a>.</p>
+        </section>
+        <section id="projects" class="my-8 text-center">
+            <h2 class="text-3xl font-bold">Projects</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <li class="border p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <a href="https://example.com/project1" class="text-purple-600 hover:underline">Project 1</a> - Description of project 1.
+                    <img src="images/project1-thumbnail.jpg" alt="Project 1 Thumbnail" class="w-full h-32 object-cover mt-2">
+                </li>
+                <li class="border p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <a href="https://example.com/project2" class="text-purple-600 hover:underline">Project 2</a> - Description of project 2.
+                    <img src="images/project2-thumbnail.jpg" alt="Project 2 Thumbnail" class="w-full h-32 object-cover mt-2">
+                </li>
+            </ul>
+        </section>
+        <section id="skills" class="my-8">
+            <h2 class="text-2xl font-bold">Skills</h2>
+            <ul class="space-y-2">
+                <li class="flex items-center">
+                    <span class="w-1/4">HTML</span>
+                    <div class="w-3/4 bg-gray-300 rounded-full skill-bar">
+                        <div class="bg-purple-600 h-2 rounded-full" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-1/4">CSS</span>
+                    <div class="w-3/4 bg-gray-300 rounded-full skill-bar">
+                        <div class="bg-purple-600 h-2 rounded-full" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-1/4">JavaScript</span>
+                    <div class="w-3/4 bg-gray-300 rounded-full skill-bar">
+                        <div class="bg-purple-600 h-2 rounded-full" style="width: 75%;"></div>
+                    </div>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-1/4">Tailwind CSS</span>
+                    <div class="w-3/4 bg-gray-300 rounded-full skill-bar">
+                        <div class="bg-purple-600 h-2 rounded-full" style="width: 85%;"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="contact" class="my-8">
+            <h2 class="text-2xl font-bold">Contact</h2>
+            <form id="contact-form">
+                <label for="name" class="block">Name:</label>
+                <input type="text" id="name" class="border p-2 w-full" required>
+                <label for="email" class="block">Email:</label>
+                <input type="email" id="email" class="border p-2 w-full" required>
+                <label for="message" class="block">Message:</label>
+                <textarea id="message" class="border p-2 w-full" required></textarea>
+                <button type="submit" class="bg-purple-600 text-white p-2 mt-2 hover:bg-purple-700 transition-colors w-full">Send</button>
+                <p id="success-message" class="text-green-600 hidden">Your message has been sent!</p>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-purple-600 text-white p-4 text-center">
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+    <script>
+        // Form validation and submission
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (name && email && message) {
+                // Send email using API or backend
+            }
+        });
+    </script>
+</body>
+</html>
